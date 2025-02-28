@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
     <title>Primera web</title>
 </head>
 <body>
@@ -52,8 +54,8 @@
             <form id="contact-form" method="POST" action="/send_email">
                 <input type="text" name="nombre" placeholder="Nombre" requiered>
                 <input type="email" name="correo" placeholder="Correo Electrónico" requiered>
-                <textarea name="mansaje" placeholder="Mensaje" required></textarea>
-                <button type="sumit">Enviar</button>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
